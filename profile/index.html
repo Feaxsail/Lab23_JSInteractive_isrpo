@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Профиль пользователя</h1>
+        <form id="profileForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" required>
+
+            <label for="city">Город:</label>
+            <input type="text" id="city" required>
+
+            <label for="hobby">Хобби:</label>
+            <input type="text" id="hobby" required>
+
+            <button type="submit">Сохранить</button>
+            <button type="button" id="clearBtn">Очистить данные</button>
+        </form>
+
+        <div id="profileDisplay">
+            <h2>Информация о пользователе</h2>
+            <p><strong>Имя:</strong> <span id="displayName"></span></p>
+            <p><strong>Возраст:</strong> <span id="displayAge"></span></p>
+            <p><strong>Город:</strong> <span id="displayCity"></span></p>
+            <p><strong>Хобби:</strong> <span id="displayHobby"></span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
